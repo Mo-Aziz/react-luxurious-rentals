@@ -8,7 +8,7 @@ white-space: nowrap;
 outline:none;
 border:none;
 min-width:100px;
-max-width:2000px;
+max-width:200px;
 cursor: pointer;
 text-decoration:none;
 transition:0.3s;

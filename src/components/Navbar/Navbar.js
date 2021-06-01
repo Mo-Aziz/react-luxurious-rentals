@@ -17,7 +17,7 @@ const Navbar = () => {
     <Nav>
       <Logo to="/">
           <img src={home}  alt={home}/>
-          <p>Luxurious Homes</p>
+          <p>Dream Homes</p>
       </Logo>
       <MenuBars />
       <NavMenu>
