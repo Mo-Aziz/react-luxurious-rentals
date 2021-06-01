@@ -3,6 +3,7 @@
  import GlobalStyle from './globalStyles';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import {slideData  } from "./data/silderData";
 
 
 
@@ -12,7 +13,7 @@ function App() {
    <>
    <GlobalStyle/>
    <Navbar/>
-   <Hero/>
+   <Hero slides={slideData}/>
    </>
   );
 }
