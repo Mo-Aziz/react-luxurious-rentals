@@ -11,15 +11,14 @@ import { menuData } from "../../data/menuData";
 import { Button } from "../Button";
 import home from "../../images/home.svg";
 
-
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">
-          <img src={home}  alt={home}/>
-          <p>Dream Homes</p>
+        <img src={home} alt={home} />
+        <p>Dream Homes</p>
       </Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
           <NavMenuLinks key={index} to={item.link}>
@@ -28,7 +27,10 @@ const Navbar = () => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button to="/" primary="true"> Contact Us</Button>
+        <Button to="/" primary="true">
+          {" "}
+          Contact Us
+        </Button>
       </NavBtn>
     </Nav>
   );
